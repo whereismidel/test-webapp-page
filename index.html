@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <!-- viewport, без возможности его увеличения пользователем -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    
-    <title>Title</title>
-</head>
-<body>
-    <div id="main">
-        <h1>Онлайн магазин</h1>
-        <img src="https://cdn.iconscout.com/icon/free/png-512/free-shopping-cart-1768065-1502238.png">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusantium ipsum facilis, fugiat autem consectetur non labore tempore laudantium blanditiis voluptas incidunt quaerat ducimus error, aspernatur officia quis suscipit rerum.</p>
-        <button id="buy">Придбати</button>
-    </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>NAU Schedule</title>
+  </head>
+  <body>
+    <header class="header">
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-</body>
+      <img src="logo.png" id="mask">
+
+      <div class="selectGroupContainer">
+        <p>Розклад занять для</p>
+        <select name="" id="" class="selectGroupChooseGroup">
+          <option class="selectGroupChooseOption" value="">1</option>
+          <option value="">1</option>
+        </select>
+      </div>
+      <div class="selectDateContainer">
+        <p>Тиждень навчання</p>
+        <input type="week" class="selectDateInput" />
+      </div>
+      <div class="chooseWeek">
+        <button class="chooseWeekItem active">Перший тиждень</button>
+        <button class="chooseWeekItem">Другий тиждень</button>
+      </div>
+    </header>
+    <main class="mainContainer">
+      <div class="mainContent">
+        <div class="chooseWeekBlock">
+          <button class="chooseWeekButton">text</button>
+          <button class="chooseWeekButton">text</button>
+          <button class="chooseWeekButton active">text</button>
+          <button class="chooseWeekButton">text</button>
+          <button class="chooseWeekButton">text</button>
+        </div>
+        <div class="scheduleSubjects">
+          <div class="scheduleSubject">
+            <div class="scheduleTimeBlock">
+              <p class="scheduleTime">time</p>
+              <div class="scheduleDivider"></div>
+            </div>
+            <div class="scheduleInfo">
+              <div>
+                <p class="scheduleTypeLesson">prak</p>
+                <p class="scheduleTypeLesson">razom</p>
+              </div>
+              <p>nazva</p>
+              <p>prepod</p>
+            </div>
+          </div>
+          <div class="scheduleSubject">
+            <div class="scheduleTimeBlock">
+              <p class="scheduleTime">time</p>
+              <div class="scheduleDivider"></div>
+            </div>
+            <div class="scheduleInfo">
+              <div class="scheduleTypeLesson">prak</div>
+              <p>nazva</p>
+              <p>prepod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
