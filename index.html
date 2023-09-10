@@ -4,63 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
     <title>NAU Schedule</title>
   </head>
   <body>
     <header class="header">
-
-      <img src="logo.png" id="mask">
+      <img src="logo.png" class="img-ligth-mask" />
 
       <div class="selectGroupContainer">
         <p>Розклад занять для</p>
         <select name="" id="" class="selectGroupChooseGroup">
-          <option class="selectGroupChooseOption" value="">1</option>
-          <option value="">1</option>
+          <option class="selectGroupChooseOption" value="">Не обрано</option>
+          <option value="">ФКПІ 444</option>
         </select>
       </div>
       <div class="selectDateContainer">
         <p>Тиждень навчання</p>
         <input type="week" class="selectDateInput" />
       </div>
-      <div class="chooseWeek">
-        <button class="chooseWeekItem active">Перший тиждень</button>
-        <button class="chooseWeekItem">Другий тиждень</button>
+
+      <div class="chooseContainer" id="chooseWeek">
+        <button class="chooseItem active" onclick="highlightButton(this)">
+          Перший тиждень
+        </button>
+        <button class="chooseItem" onclick="highlightButton(this)">
+          Другий тиждень
+        </button>
       </div>
     </header>
+
     <main class="mainContainer">
       <div class="mainContent">
-        <div class="chooseWeekBlock">
-          <button class="chooseWeekButton">text</button>
-          <button class="chooseWeekButton">text</button>
-          <button class="chooseWeekButton active">text</button>
-          <button class="chooseWeekButton">text</button>
-          <button class="chooseWeekButton">text</button>
+        <div class="chooseContainer" id="chooseWeekDay">
+          <button class="chooseItem active" onclick="highlightButton(this)">
+            ПН
+          </button>
+          <button class="chooseItem" onclick="highlightButton(this)">ВТ</button>
+          <button class="chooseItem" onclick="highlightButton(this)">СР</button>
+          <button class="chooseItem" onclick="highlightButton(this)">ЧТ</button>
+          <button class="chooseItem" onclick="highlightButton(this)">ПТ</button>
         </div>
+
         <div class="scheduleSubjects">
           <div class="scheduleSubject">
             <div class="scheduleTimeBlock">
-              <p class="scheduleTime">time</p>
+              <p class="scheduleTime">8:30</p>
               <div class="scheduleDivider"></div>
             </div>
             <div class="scheduleInfo">
               <div>
-                <p class="scheduleTypeLesson">prak</p>
-                <p class="scheduleTypeLesson">razom</p>
+                <p class="lessonInfoBox lect">Лекція</p>
+                <p class="lessonInfoBox pract">Практика</p>
+                <p class="lessonInfoBox lab">Лабораторна</p>
+                <p class="lessonInfoBox common">Cпільна</p>
+                <p class="lessonInfoBox first-subgroup">1 підгрупа</p>
+                <p class="lessonInfoBox second-subgroup">2 підгрупа</p>
               </div>
-              <p>nazva</p>
-              <p>prepod</p>
-            </div>
-          </div>
-          <div class="scheduleSubject">
-            <div class="scheduleTimeBlock">
-              <p class="scheduleTime">time</p>
-              <div class="scheduleDivider"></div>
-            </div>
-            <div class="scheduleInfo">
-              <div class="scheduleTypeLesson">prak</div>
-              <p>nazva</p>
-              <p>prepod</p>
+              <p class="lessonTitle">
+                <span class="icon">📚</span>Операційні системи та технології
+              </p>
+              <p class="lectorName">
+                <span class="icon">🧑‍🎓</span>ВАК_Корченко О.Г.
+              </p>
+              <div class="editLessonButton">
+                Редагувати інформацію
+              </div>
             </div>
           </div>
         </div>
