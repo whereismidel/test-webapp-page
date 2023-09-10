@@ -53,6 +53,7 @@ body {
 /* End choose block */
 
 .selectGroupContainer {
+  font-size: 0.9em;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -73,6 +74,7 @@ body {
   outline: 1px solid rgb(208, 255, 20);
 }
 .selectDateContainer {
+  font-size: 0.9em;
   display: flex;
   gap: 30px;
   align-items: center;
