@@ -221,17 +221,12 @@ body {
   font-size: 0.8em;
 
   cursor: pointer;
-}
-
-.editLessonButton {
-
-  filter: drop-shadow(0 0 0.9rem rgb(145, 145, 151));
 
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
 
-.editLessonButton:focus {
+.editLessonButton:active, .editLessonButton:focus {
   background-color: transparent;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
