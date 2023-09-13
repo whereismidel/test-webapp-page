@@ -14,7 +14,6 @@ function highlightButton(button) {
     // Задаємо нове значення transform для анімації
     highlightBox.style.transformOrigin = buttonIndex === 0 ? 'left center' : 'right center'; // Определяем направление анимации
     highlightBox.style.transform = `translateX(${translateX}px) scaleX(1)`;
-    highlightBox.style.width = `${buttonWidth}px`;
     
     // Знімаємо виділення з усіх кнопок в межах цього контейнера
     const buttonsInContainer = container.querySelectorAll('.chooseItem');
@@ -22,6 +21,10 @@ function highlightButton(button) {
   
     // Встановлюємо виділення для обраної кнопки
     button.classList.add('active');
+
+    setTimeout(function() {
+        highlightBox.style.width = `${buttonWidth}px`;
+    }, 100);
 }
 
 // Обработчик события изменения размера страницы
