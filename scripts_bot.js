@@ -1,9 +1,11 @@
-let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 
-tg.expand(); //расширяем на все окно
-
-let btn = document.getElementById("btn"); //получаем кнопку активировать/деактивировать
-
-btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-	tg.sendData("some string that we need to send"); 
-});
+//initialize the "save" button
+const mainButton = window.Telegram.WebApp.MainButton;
+mainButton.text = "Save Preferences";
+mainButton.enable();
+mainButton.show();
+// and make it send the "foods" object (as JSON string) back to the backend
+mainButton.onClick(function(){
+    console.log("hi");
+    window.Telegram.WebApp.sendData("Hi");
+})
