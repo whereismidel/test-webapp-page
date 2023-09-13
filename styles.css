@@ -21,7 +21,7 @@ body {
   width: 30%;
   padding-bottom: 20px;
   margin: 0;
-  filter: drop-shadow(0 0 0.75rem rgb(145, 145, 151));
+  filter: drop-shadow(0 0 0.8rem rgb(181, 181, 194));
 }
 
 /* Choose block */
@@ -31,6 +31,8 @@ body {
   gap: 5px;
   border-radius: 50px;
   margin-bottom: 10px;
+  
+  position: relative; /* Добавляем позиционирование контейнера */
 }
 
 .chooseItem {
@@ -44,13 +46,31 @@ body {
   flex-grow: 1;
   
   cursor: pointer;
+  
+  background-color: transparent;
+  transition: color 0.8s;
 }
 
 .chooseItem.active {
+  background: transparent;
+  color: rgb(22, 5, 255);
   background-color: rgba(250, 250, 250, 0.692);
-  color: rgb(0, 0, 0);
   filter: drop-shadow(0 0 0.9rem rgb(145, 145, 151));
+  
+  transition: background-color 2s;
 }
+
+.highlightBox {
+  background-color: rgba(250, 250, 250, 0.692);
+  filter: drop-shadow(0 0 0.9rem rgb(145, 145, 151));
+
+  position: absolute;
+  border-radius: 50px;
+  height: 100%;
+  transform-origin: left center;
+  transition: transform 0.3s ease-in-out;
+}
+
 /* End choose block */
 
 .selectGroupContainer {
@@ -148,11 +168,11 @@ body {
 .lessonInfoBox {
   font-size: 0.8em;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 5px;
   display: inline-block;
   background-color: rgb(210, 195, 62);
   border-radius: 30px;
-  margin: 5px 0px;
+  margin: 0;
 }
 
 .lect {
