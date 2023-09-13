@@ -226,7 +226,7 @@ body {
   user-select: none;
 }
 
-.editLessonButton:active, .editLessonButton:focus {
+.editLessonButton:active, .editLessonButton:focus, .editLessonButton:oncli {
   background-color: transparent;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
