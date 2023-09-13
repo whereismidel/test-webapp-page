@@ -27,6 +27,8 @@ function highlightButton(button) {
     }, 100);
 }
 
+
+
 // Обработчик события изменения размера страницы
 window.addEventListener('resize', function () {
     const activeButtons = document.querySelectorAll('.chooseItem.active');

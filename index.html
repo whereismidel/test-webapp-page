@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts_ui.js"></script>
     <script src="scripts_bot.js"></script>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>NAU Schedule</title>
   </head>
   <body>
@@ -82,7 +81,7 @@
               <p class="lectorName hide">
                 <span class="icon">🧑‍🎓</span>ВАК_Корченко О.Г.
               </p>
-              <div id="btn" class="editLessonButton">
+              <div class="editLessonButton" onclick="clickkk(this)">
                 Редагувати інформацію
               </div>
             </div>
@@ -90,5 +89,7 @@
         </div>
       </div>
     </main>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </body>
 </html>
