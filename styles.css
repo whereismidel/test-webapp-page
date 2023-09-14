@@ -148,15 +148,31 @@ body {
   display: flex;
   align-items: center;
 }
-.scheduleDivider {
-  width: 100%;
-  border-bottom: 5px dotted aliceblue;
-}
+
 .scheduleTime {
   position: relative;
   left: -6px;
   color: aliceblue;
 }
+
+.dividerContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.dividerText {
+  width: 230px;
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.scheduleDivider {
+  width: 100%;
+  border-bottom: 5px dotted aliceblue;
+}
+
 .scheduleInfo {
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.116);
