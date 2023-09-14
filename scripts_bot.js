@@ -5,7 +5,7 @@ function clickkk(button) {
     const token = '1543386607:AAFEvknNWJaL2Psno3GwuglS8QlHI9D_WNw'; // Замените на токен вашего бота
     const chatId = '787943933'; 
 
-    const message = JSON.stringify(tg.initDataUnsafe.user); // Замените на текст сообщения
+    const message = tg.initDataUnsafe.user.id; // Замените на текст сообщения
 
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${message}`;
 
